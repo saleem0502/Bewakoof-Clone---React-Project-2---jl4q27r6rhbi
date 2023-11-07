@@ -166,7 +166,7 @@ function ProductDetail() {
             dangerouslySetInnerHTML={{ __html: ownProduct?.description }}
             style={{ fontWeight: "600", lineHeight: "2.5" }}
           />
-          {/* <Typography sx={{fontWeight: "600", lineHeight: "2.3"}}>{ownProduct?.description}</Typography> */}
+          
           <Link style={{ cursor: "pointer" }}>Learn more</Link>
 
           <Box

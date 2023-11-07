@@ -141,6 +141,7 @@ function Home() {
           </Box>
         ))}
       </Box>
+      
       <Typography
         sx={{
           textAlign: "center",

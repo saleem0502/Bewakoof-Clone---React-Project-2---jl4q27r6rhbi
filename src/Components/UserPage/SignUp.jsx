@@ -139,19 +139,7 @@ function SignUp() {
             label="Your email address"
             variant="outlined"
           />
-          {/* <Typography variant="subtitle2">
-            You will need to confirm that this email belongs to you.
-          </Typography>
-          <Link
-            variant="subtitle2"
-            sx={{
-              textDecoration: "none",
-              marginTop: "30px",
-              display: "block",
-              cursor: "pointer",
-            }}>
-            Create a Gmail account instead
-          </Link> */}
+          
           <Box display="flex">
             <TextField
               // fullWidth

@@ -60,6 +60,7 @@ function SearchResults() {
           {`(${filteredProduct?.length})`}
         </Typography>
       </Box>
+      
       <Box display="flex" justifyContent="center">
         <Box
           width="28%"

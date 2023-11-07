@@ -11,13 +11,13 @@ const Sidebar = () => {
     <div>
       <ul style={{backgroundColor:"#F7BB3F"}}>
         <li>
-          <Link to='/menware' 
+          <Link to='/filter' 
            style={{ textDecoration: 'none', color: 'black',fontSize:'20px' }}>
             MEN
             </Link>
         </li>
         <li>
-          <Link to='/womenware'
+          <Link to='/filter'
            style={{ textDecoration: 'none', color: 'black',fontSize:'20px' }}>
             WOMEN
             </Link>
@@ -56,6 +56,12 @@ const Sidebar = () => {
           <Link to='/order'  
           style={{ textDecoration: 'none', color: 'black',fontSize:'20px'  }}>
             Orderlist
+            </Link>
+        </li>
+        <li>
+          <Link to='/profile'  
+          style={{ textDecoration: 'none', color: 'black',fontSize:'20px'  }}>
+            profile
             </Link>
         </li>
       </ul>

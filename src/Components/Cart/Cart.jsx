@@ -270,7 +270,7 @@ import {
               width="100%"
               // width="550px"
               mt="32px"
-              // border="0.1px solid lightgrey"
+              
             >
               <Box marginBottom="10px" sx={textStyle}>
                 Whistles! Get extra 15% cashback on prepaid orders above Rs.699.

@@ -63,6 +63,7 @@ function Footer() {
                 <FacebookIcon sx={{color:'blue'}}/>
                 4.8M People Like this
               </Typography>
+              
               <Typography>
                 <InstagramIcon sx={{color:'red'}}/>
                 2M Followers

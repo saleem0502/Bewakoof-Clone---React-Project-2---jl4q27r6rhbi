@@ -55,6 +55,7 @@ function Product({ obj, key, size }) {
           color="rgba(1,1,1,0.8)">
           {obj.brand}
         </Typography>
+        
         <Typography
           whiteSpace="nowrap"
           overflow="hidden"

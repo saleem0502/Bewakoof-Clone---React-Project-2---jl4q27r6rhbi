@@ -14,9 +14,6 @@ function Wishlist() {
     setOwnProduct(changedVideo);
   }, []);
 
-  // useEffect(() => {
-  //   console.log("djhfdjf", ownProduct);
-  // }, [ownProduct]);
   return (
     <Box>
       <Typography variant="h4" fontWeight="600" mt="10px" textAlign="center">

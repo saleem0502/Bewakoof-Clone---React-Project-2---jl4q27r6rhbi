@@ -23,6 +23,7 @@ function UserAccount() {
   };
   const headingStyle = { color: "gray", fontWeight: "600", display: "flex" };
   const iconStyle = { color: "grey", padding: "5px" };
+  
   return (
     <Box width="100%" height="auto" display="flex" justifyContent="center">
       <Box width="75%" height="auto" display="flex" flexDirection="column">

@@ -12,6 +12,7 @@ export const Women = () => {
           obj.sellerTag.charAt(0).toUpperCase(1) + obj.sellerTag.slice(1) ===
           filteredProducts,
       );
+      
       setFilteredProduct(filtered);
       setduplicateFilter(filtered);
     }, []);

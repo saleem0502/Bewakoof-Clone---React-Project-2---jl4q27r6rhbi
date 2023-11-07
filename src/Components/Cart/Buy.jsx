@@ -27,6 +27,7 @@ function Buy() {
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select>
+            
             <select>
               <option>Quantity : </option>
               <option value="1">1</option>
