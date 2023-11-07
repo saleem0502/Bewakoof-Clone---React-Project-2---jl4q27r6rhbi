@@ -1,0 +1,24 @@
+/* Sidebar.css */
+
+/* Reset default styles */
+ul {
+  display: flex;
+  flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    
+  }
+
+  li{
+    padding: 10px;
+  }
+
+  li :hover{
+    color: rgb(37 99 235);
+    margin-top: 0.5rem;
+  }
+  
+  
+  
