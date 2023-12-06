@@ -59,10 +59,6 @@ const Header = () => {
       }
   },[]);
 
-  useEffect(()=>{
-    console.log("meri wish", wish);
-  },[wish]);
-
   useEffect(() => {
     const updatedWishlist = JSON.parse(
       localStorage.getItem("products"),
@@ -105,7 +101,7 @@ const Header = () => {
 
     console.log(result);
     dispatch({ type: "SET_SEARCHRESULT", payload: result });
-    navigate("/");
+    
     navigate("/search");
   };
   
@@ -113,7 +109,6 @@ const Header = () => {
   const handleToggleMenu = () => {
     // console.log("yes")
     setSidebar(!sidebar);
-    // dispatch(toggleMenu());
 }
 
   return (
@@ -126,12 +121,7 @@ const Header = () => {
              onClick={() => navigate("/")}/>
         </div>
 
-        <div className='Items'>
-          <p><Link style={{ textDecoration: 'none', color: 'black' }} to='/'>MEN</Link></p>
-          <p ><Link style={{ textDecoration: 'none', color: 'black' }} to='/'>WOMEN</Link></p>
-
-        </div>
-
+       
         <div className='right-side'>
           <Paper
             component="form"

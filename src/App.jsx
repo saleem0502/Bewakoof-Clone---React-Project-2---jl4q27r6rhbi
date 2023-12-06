@@ -9,8 +9,6 @@ import Footer from './Components/Footer/Footer'
 import SearchResults from './Components/Filter/SearchResults'
 import FilteredPage from './Components/Filter/FilteredPage'
 import Cart from "./Components/Cart/Cart";
-import Men from './Components/Cloths/Men'
-import { Women } from './Components/Cloths/Women'
 import ProductDetail from './Components/Products/ProductDetail'
 import Wishlist from './Components/Wishlist/Wishlist'
 import { useEffect } from "react";
@@ -51,13 +49,11 @@ function App() {
     <Header />
     
      <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/' exact element={<Home />} />
       <Route path="/product" element={<ProductDetail />} />
       <Route path="/search" element={<SearchResults />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/filter" element={<FilteredPage />} />
-      <Route path="/men" element={<Men />} />
-      <Route path="/women" element={<Women />} />
       <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/account" element={<UserAccount />} />
       <Route path="/profile" element={<Profile />} />

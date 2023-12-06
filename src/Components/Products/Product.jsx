@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useStateProvider } from "../../Utils/StateProvider";
 

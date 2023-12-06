@@ -29,26 +29,7 @@ function FilteredPage() {
     console.log(filteredProduct);
   }, [filteredProduct]);
 
-  const handleFilter = (value, key) => {
-    if (key === "gender") {
-      const newFiltered = duplicateFilter.filter((obj) => obj.gender === value);
-      console.log(newFiltered);
-      setFilteredProduct(newFiltered);
-    } else if (key === "price") {
-      const newFiltered = duplicateFilter.filter((obj) => obj.price <= value);
-      console.log(newFiltered);
-      setFilteredProduct(newFiltered);
-    } else {
-      const newFiltered = duplicateFilter.filter((obj) => obj.color === value);
-      console.log(newFiltered);
-      setFilteredProduct(newFiltered);
-    }
-  };
 
-  const listItemStyle = {
-    listStyleType: "none",
-    color: "rgba(1,1,1,0.5)",
-  };
 
   return (
     <Box
@@ -93,13 +74,12 @@ function FilteredPage() {
                 width: "100%",
                 color: "black",
               }}>
-              <ul style={listItemStyle}>
-                <li value="men" onClick={() => handleFilter("Men", "gender")}>
+              <ul>
+                <li value="men">
                   Men
                 </li>
                 <li
-                  value="women"
-                  onClick={() => handleFilter("Women", "gender")}>
+                  value="women">
                   Women
                 </li>
               </ul>
@@ -127,13 +107,13 @@ function FilteredPage() {
                 width: "100%",
                 color: "black",
               }}>
-              <ul style={listItemStyle}>
-                <li onClick={() => handleFilter("100", "price")}>Below 100</li>
-                <li onClick={() => handleFilter("500", "price")}>Below 500</li>
-                <li onClick={() => handleFilter("700", "price")}>Below 750</li>
-                <li onClick={() => handleFilter("1000", "price")}>Below 1000</li>
-                <li onClick={() => handleFilter("1500", "price")}>Below 1500</li>
-                <li onClick={() => handleFilter("2000", "price")}>Below 2000</li>
+              <ul >
+                <li >Below 100</li>
+                <li>Below 500</li>
+                <li >Below 750</li>
+                <li >Below 1000</li>
+                <li >Below 1500</li>
+                <li >Below 2000</li>
               </ul>
             </AccordionDetails>
           </Accordion>
@@ -159,17 +139,17 @@ function FilteredPage() {
                 width: "100%",
                 color: "black",
               }}>
-              <ul style={listItemStyle}>
-                <li onClick={() => handleFilter("BLACK", "color")}>Black</li>
-                <li onClick={() => handleFilter("WHITE", "color")}>White</li>
-                <li onClick={() => handleFilter("BROWN", "color")}>Brown</li>
-                <li onClick={() => handleFilter("BLUE", "color")}>Blue</li>
-                <li onClick={() => handleFilter("GREEN", "color")}>Green</li>
-                <li onClick={() => handleFilter("RED", "color")}>Red</li>
-                <li onClick={() => handleFilter("PINK", "color")}>Pink</li>
-                <li onClick={() => handleFilter("LAVENDER", "color")}>Lavender</li>
-                <li onClick={() => handleFilter("YELLOW", "color")}>Yellow</li>
-                <li onClick={() => handleFilter("GREY", "color")}>Grey</li>
+              <ul>
+                <li>Black</li>
+                <li>White</li>
+                <li>Brown</li>
+                <li>Blue</li>
+                <li>Green</li>
+                <li>Red</li>
+                <li>Pink</li>
+                <li>Lavender</li>
+                <li>Yellow</li>
+                <li>Grey</li>
               </ul>
             </AccordionDetails>
           </Accordion>
@@ -195,7 +175,7 @@ function FilteredPage() {
                 width: "100%",
                 color: "black",
               }}>
-              <ul style={listItemStyle}>
+              <ul>
                 <li>Bewakoof</li>
                 <li>Dillinger</li>
                 <li>Olavi</li>

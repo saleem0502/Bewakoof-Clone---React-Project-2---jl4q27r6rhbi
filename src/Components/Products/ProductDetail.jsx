@@ -12,6 +12,9 @@ function ProductDetail() {
   const [ownProduct, setOwnProduct] = useState(null);
   const [value, setValue] = useState(0);
   const [cart, setCart] = useState(null);
+  const [selectedSize, setSelectedSize] = useState(null);
+
+  
 
   const navigate = useNavigate();
 
@@ -68,10 +71,20 @@ function ProductDetail() {
       handleStorage();
     }
   };
+
+  const handleSizeSelection = (size) => {
+    setSelectedSize(size);
+  };
+
+  
   const handleCart = () => {
     if (token === null) {
       alert("Login before you are adding item to cart!");
     } else {
+      if (!selectedSize) {
+        alert("Please select a size before adding to cart.");
+        return; // Do not proceed further if size is not selected
+      }
       if (ownProduct?.cart) {
         ownProduct.cart = false;
       } else {
@@ -103,6 +116,8 @@ function ProductDetail() {
       handleStorage();
     }
   };
+
+  
 
   return (
     <>
@@ -203,7 +218,8 @@ function ProductDetail() {
               width="50px"
               border="0.5px solid lightgrey"
               borderRadius="5px"
-              sx={{ cursor: "pointer" }}>
+              sx={{ cursor: "pointer", backgroundColor: selectedSize === "S" ? "lightblue" : "white", }}
+              onClick={() => handleSizeSelection("S")}>
               S
             </Typography>
             <Typography
@@ -214,7 +230,8 @@ function ProductDetail() {
               width="50px"
               border="0.5px solid lightgrey"
               borderRadius="5px"
-              sx={{ cursor: "pointer" }}>
+              sx={{ cursor: "pointer", backgroundColor: selectedSize === "M" ? "lightblue" : "white", }}
+              onClick={() => handleSizeSelection("M")}>
               M
             </Typography>
             <Typography
@@ -225,7 +242,8 @@ function ProductDetail() {
               width="50px"
               border="0.5px solid lightgrey"
               borderRadius="5px"
-              sx={{ cursor: "pointer" }}>
+              sx={{ cursor: "pointer", backgroundColor: selectedSize === "L" ? "lightblue" : "white", }}
+              onClick={() => handleSizeSelection("L")}>
               L
             </Typography>
             <Typography
@@ -236,7 +254,8 @@ function ProductDetail() {
               width="50px"
               border="0.5px solid lightgrey"
               borderRadius="5px"
-              sx={{ cursor: "pointer" }}>
+              sx={{ cursor: "pointer", backgroundColor: selectedSize === "XL" ? "lightblue" : "white", }}
+              onClick={() => handleSizeSelection("XL")}>
               XL
             </Typography>
             <Typography
@@ -247,7 +266,8 @@ function ProductDetail() {
               width="50px"
               border="0.5px solid lightgrey"
               borderRadius="5px"
-              sx={{ cursor: "pointer" }}>
+              sx={{ cursor: "pointer", backgroundColor: selectedSize === "2XL" ? "lightblue" : "white", }}
+              onClick={() => handleSizeSelection("2XL")}>
               2XL
             </Typography>
             <Typography
@@ -258,7 +278,8 @@ function ProductDetail() {
               width="50px"
               border="0.5px solid lightgrey"
               borderRadius="5px"
-              sx={{ cursor: "pointer" }}>
+              sx={{ cursor: "pointer", backgroundColor: selectedSize === "3XL" ? "lightblue" : "white", }}
+              onClick={() => handleSizeSelection("3XL")}>
               3XL
             </Typography>
           </Box>

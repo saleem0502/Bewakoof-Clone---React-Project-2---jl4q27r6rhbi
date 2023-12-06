@@ -48,7 +48,8 @@ function Home() {
   useEffect(() => {
     console.log(products);
     if (products) {
-      setSlideImage(products.slice(1, 25));
+      setSlideImage(products.slice(1, 10));
+      //trending cloths are coming
     }
   }, [products]);
 

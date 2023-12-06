@@ -308,10 +308,6 @@ import {
                       <TableCell
                         //  display="flex"
                         width="100%"
-                        // height="50px"
-                        // alignItems="center"
-                        // paddingLeft="20px"
-                        // mt="15px"
                         color="black"
                         colSpan={2}
                         sx={{ backgroundColor: "lightgrey", cursor: "pointer" }}>
