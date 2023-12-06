@@ -80,20 +80,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-###About project
+## About project
+
 This project is clone of bewakoof.com that is a ecommerce website and sell clothes . this is my Newton project given by Newton school . I tried to make this project looking like real one . The Api i use in project is given and created and manage by Newton School i use api to create this project .
 
 ### Project main page
 I create Header section and some images comes from API thats given by newton schoolshown on main page .I used those images to filter their cloths
 
-### Header
+# Header
 In header i have  search, cart, wishList and user details
 
 In header section their is a search option  if user click they go to product page where all the product are their if the user click on and product they route to the product Detail Page which carries the clothes tha data and othr information and also add to cart and add to wishlist button and order now button ans also product description. In the right side given a user face their is login and logout option.
 
 
-### CSS
+# CSS
 i use  css in project ;
 
-### Conclusion
+# Conclusion
 This is my First ecommerce project . API Integration - In this project i used to handle every things with Api's that provided by newton School .
